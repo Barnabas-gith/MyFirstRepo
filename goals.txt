@@ -1,7 +1,13 @@
-# My Personal and Academic Goals for Next Year
-
-- Complete my Management degree at Saint Mary's University
-- Strengthen my technical skills in software engineering and data science
-- Launch or contribute to a community-based digital solution for rural water access
-- Improve my Git, GitHub, and programming workflow
-- Participate in at least one tech-based internship or project
+# Step 1: Create and switch to new branch
+git checkout -b feature-update
+# Step 2: Create the goals.txt file with the required content
+echo "My Personal and Academic Goals for Next Year" > goals.txt
+echo "- Improve my coding skills" >> goals.txt
+echo "- Complete a certification" >> goals.txt
+echo "- Start a new project" >> goals.txt
+# Step 3: Stage the file
+git add goals.txt
+# Step 4: Commit with the exact required message
+git commit -m "Added goals list"
+# Step 5: Push the new branch to remote
+git push origin feature-update
