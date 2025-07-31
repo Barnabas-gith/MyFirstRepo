@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Script to create learning.txt, commit it, and push changes to GitHub
+# Create the learning.txt file with reflection text
+echo "So far, I have learned how to use Git for version control, including cloning, branching, committing, and pushing changes." > learning.txt
+# Stage the new file
+git add learning.txt
+# Commit the change with a message
+git commit -m "Added learning.txt with course reflection"
+# Push to the main branch on origin
+git push origin main
